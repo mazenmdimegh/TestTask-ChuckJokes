@@ -1,0 +1,37 @@
+.footer-wrapper {
+    background-image: url("../../assets/assets_Homework_Front-End_01/bitmap_2@3x.png");
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+    text-transform: uppercase;
+    justify-content: center;
+
+    .footer-text {
+        width: 70%;
+        text-align: start;
+        margin: auto;
+        padding-top: 50px;
+
+        h3 {
+            color: #fff;
+            // font-weight: 400;
+            font-family: "Montserrat-Light";
+            
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: #ffffff00;
+            text-transform: uppercase;
+            color: #cfb995;
+            border: none;
+            font-size: 18px;
+            font-family: "Montserrat-Medium";
+        }
+    }
+    .arrow{
+        padding-left: 10px;
+        width: 25px;
+        margin-bottom: -3px;
+    }
+}
