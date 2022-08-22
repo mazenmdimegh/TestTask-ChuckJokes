@@ -4,7 +4,8 @@ import React, { useEffect, useState } from "react";
 import "./JokeCard.scss";
 
 
-const JokeCard = (Joke) => {
+const JokeCard = ({Joke}) => {
+    // const joke=Joke;
     const aa = {
         "categories": [],
         "created_at": "2020-01-05 13:42:18.823766",
@@ -18,8 +19,10 @@ const JokeCard = (Joke) => {
     return (
         <div className="card-wrapper">
         <div className="card-wrap">
+            <div >
             <h5><span><img className='orangeLight' src={orangeLight} /></span>lawyer Joke</h5>
-            <p className='joke-text'>{aa["value"]}</p>
+            <p className='joke-text'>{Joke["value"]}</p>
+            </div>
             <div className='seestats'>SEE STATS<span><img className='arrow' src={arrow} /></span></div>
         </div>
         </div>

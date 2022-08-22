@@ -25,11 +25,14 @@
         margin-top: 80px;
         width: 500px;
         margin: 61px auto 0;
-
+        button{
+            background-color: #58e69100;
+            border: none;
+        }
         .search {
             margin-bottom: -5.5px;
             width: 28px;
-            padding-left: 25px;
+            margin-left: 25px;
             // padding-right: 15px;
             // -webkit-filter: invert(100%);
             cursor: pointer;
@@ -63,7 +66,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: flex-start;
-        margin-top: 48px;
+        margin: 48px 0 30px;
 
         button:hover {
             // border: 1px solid #000;
@@ -125,7 +128,7 @@
         width: 150px;
         background-color: #58e690;
         color: white;
-        margin-top: -1px;
+        margin-top: -2px;
     }
     .viewAll {
         color: #cfb995;
