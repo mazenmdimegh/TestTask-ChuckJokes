@@ -1,49 +1,107 @@
-.card-wrapper {
-    // height: 265px;
-    // min-width: 350px;
-    width: 26vw;
-    min-height: 278px;
-    background-color: #fff;
-    text-align: left;
-    margin-bottom: 41px;
+@media only screen and (min-width: 1100px) {
 
-    .card-wrap {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
+    .card-wrapper {
+        // height: 265px;
+        // min-width: 350px;
+        width: 26vw;
+        min-height: 278px;
+        background-color: #fff;
+        text-align: left;
+        margin-bottom: 41px;
 
-    h5 {
-        text-transform: uppercase;
-        padding-left: 32px;
-        padding-top: 16px;
-        font-size: 16px;
+        .card-wrap {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
 
-        .orangeLight {
-            width: 11px;
-            padding-right: 5px;
-            margin-bottom: -3.5px;
+        h5 {
+            text-transform: uppercase;
+            padding-left: 32px;
+            padding-top: 16px;
+            font-size: 16px;
+
+            .orangeLight {
+                width: 11px;
+                padding-right: 5px;
+                margin-bottom: -3.5px;
+            }
+        }
+
+        .joke-text {
+            padding: 15px;
+            overflow: hidden;
+        }
+
+        .seestats {
+            color: #cfb995;
+            padding: 16px 0;
+            text-align: right;
+            margin-top: auto;
+            text-decoration: none;
+
+            .arrow {
+                padding: 0 10px;
+            }
+
         }
     }
 
-    .joke-text {
-        padding: 15px;
-        overflow: hidden;
-    }
-
-    .seestats {
-        color: #cfb995;
-        padding: 16px 0;
-        text-align: right;
-        margin-top: auto;
-        text-decoration: none;
-        .arrow {
-            padding: 0 10px;
-        }
-
+    .card-wrapper:hover {
+        box-shadow: 0 1px 7px 0 rgb(0 0 0 / 24%);
     }
 }
 
-.card-wrapper:hover {
-    box-shadow: 0 1px 7px 0 rgb(0 0 0 / 24%);
+@media only screen and (max-width: 1100px) {
+
+    .card-wrapper {
+        width: 39vw;
+        min-width: 345px;
+        min-height: 278px;
+        margin: 0 5px;
+        background-color: #fff;
+        text-align: left;
+        margin-bottom: 30px;
+
+        .card-wrap {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        h5 {
+            text-transform: uppercase;
+            padding-left: 32px;
+            padding-top: 16px;
+            font-size: 16px;
+
+            .orangeLight {
+                width: 11px;
+                padding-right: 5px;
+                margin-bottom: -3.5px;
+            }
+        }
+
+        .joke-text {
+            padding: 15px;
+            overflow: hidden;
+        }
+
+        .seestats {
+            color: #cfb995;
+            padding: 16px 0;
+            text-align: right;
+            margin-top: auto;
+            text-decoration: none;
+
+            .arrow {
+                padding: 0 10px;
+            }
+
+        }
+    }
+
+    .card-wrapper:hover {
+        box-shadow: 0 1px 7px 0 rgb(0 0 0 / 24%);
+    }
 }

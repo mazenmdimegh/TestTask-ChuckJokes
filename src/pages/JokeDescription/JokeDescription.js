@@ -106,7 +106,7 @@ const JokeDescription = () => {
                             <div className='title'>
 
                                 <h1>The Granny Joke</h1>
-                                <h4>_____________________________  </h4>
+                                <h4>_________________ </h4>
                                 <h4 className='No'>  NO #1</h4>
                             </div>
                             <p className='p'>{Joke.value}</p>

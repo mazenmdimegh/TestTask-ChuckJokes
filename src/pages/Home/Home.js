@@ -13,6 +13,7 @@ const Home = () => {
     const [AllCategories, setAllCategories] = useState();
     const [Categories, setCategories] = useState();
     const [SelectedCategory, setSelectedCategory] = useState("");
+    const [Toggle, setToggle] = useState(false);
     const [Keyword, setKeyword] = useState('');
     const [Jokes, setJokes] = useState();
     const [LoadedJokes, setLoadedJokes] = useState();
@@ -42,6 +43,7 @@ const Home = () => {
         }
     ];
     const searchByCategory = (category) => {
+        setToggle(false)
         setSelectedCategory(category.toUpperCase())
         // console.log(test.filter(element => (element.categories.find(el => el == category)) != undefined))   
         axios.get(`https://api.chucknorris.io/jokes/search?query=all`)
@@ -193,6 +195,25 @@ const Home = () => {
                         <button className="viewAll" onClick={() => hideShowCategories()}>VIEW LESS<span><img className='arrow Reversed' src={arrow} /></span></button>
                     )}
                 </div>
+                <div className="jokes-buttons-M">
+                    <button className="btn" onClick={() => setToggle(!Toggle)}>Choose a Category</button>
+                    {Toggle &&
+                        <div className="popup-wrap">
+                            {Categories && Categories.map((category, index) => {
+                                return (
+                                    <button key={index} onClick={() => searchByCategory(category)} style={{ backgroundColor: colors[index] }}>{category.toUpperCase()}</button>
+                                );
+                            }
+                            )}
+                            {Categories && Categories.length != AllCategories.length && (
+                                <button className="viewAll" onClick={() => hideShowCategories()}>VIEW ALL<span><img className='arrow' src={arrow} /></span></button>
+                            )}
+                            {Categories && Categories.length == AllCategories.length && (
+                                <button className="viewAll" onClick={() => hideShowCategories()}>VIEW LESS<span><img className='arrow Reversed' src={arrow} /></span></button>
+                            )}
+                        </div>
+                    }
+                </div>
                 <div className="jokes-cards-container">
                     <hr />
                     {SelectedCategory != "" && (
@@ -207,7 +228,7 @@ const Home = () => {
                                 <JokeCard key={index} Joke={joke} />
                             );
                         })}
-                        {LoadedJokes && LoadedJokes.length==0 &&
+                        {LoadedJokes && LoadedJokes.length == 0 &&
                             <div className="stop-wrapper">
                                 <AiOutlineStop className="Stop" />
                                 <h3>No Jokes Available</h3>
