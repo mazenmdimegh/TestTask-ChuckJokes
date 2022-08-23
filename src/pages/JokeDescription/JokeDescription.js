@@ -126,8 +126,8 @@ const JokeDescription = () => {
                                 </button>
                             </div>
                             <div className='prev-next'>
-                            {Jokes&& Jokes.findIndex((element) => element.id == id)!=0&&<button onClick={PREV} ><span><img className='arrow-prev reversed' src={arrow} /></span>PREV.JOKE</button>}
-                                {Jokes&& Jokes.findIndex((element) => element.id == id)<(Jokes.length-1)&&<button onClick={NEXT} >NEXT.JOKE<span><img className='arrow-next' src={arrow} /></span></button>}
+                            {Jokes&& Jokes.findIndex((element) => element.id == id)!=0&&<button onClick={PREV} ><span><img className='arrow-prev reversed' src={arrow} /></span>PREV JOKE</button>}
+                                {Jokes&& Jokes.findIndex((element) => element.id == id)<(Jokes.length-1)&&<button onClick={NEXT} className="right">NEXT JOKE<span><img className='arrow-next' src={arrow} /></span></button>}
                             </div>
                         </div>
                     </div>

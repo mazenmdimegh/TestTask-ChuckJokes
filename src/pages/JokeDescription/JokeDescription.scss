@@ -348,14 +348,18 @@
 
                     .prev-next {
                         button {
-                            background-color: white;
-                            // height: 50px;
-                            padding: 12px 28px;
-                            margin: 0 20px;
+                            background-color: #ffffff00;
+                            margin: 10px 9px;
                             color: #cfb995;
                             font-family: "Montserrat-Medium";
-                            border: 1px solid #cfb9958c;
+                            border: none;
                             cursor: pointer;
+                        }
+
+                        .right {
+                            border-left: 1px solid #cfb995;
+                            padding-left: 15px;
+
                         }
 
                         .arrow-prev {
