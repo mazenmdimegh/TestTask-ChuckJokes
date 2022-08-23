@@ -1,0 +1,222 @@
+.JokeDescription {
+    margin: 50px auto;
+    width: 78vw;
+    display: grid;
+
+
+    .Link {
+        border: none;
+        float: left;
+        cursor: pointer;
+
+        .back {
+            width: 80px;
+            transform: scaleX(-1) rotate(-5deg);
+        }
+
+        .arrow {
+            width: 11px;
+            margin: 18px 37px;
+            position: absolute;
+            z-index: 1;
+            transform: scaleX(1);
+        }
+    }
+
+    .JokeDescription-wrapper {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .job- {
+            min-height: 228px;
+            background-color: #fff;
+            padding: 18px;
+        }
+
+        .job-desc {
+            width: 800px;
+            // width: 100%;
+
+            .like-dislike-container {
+                width: 100%;
+                height: 94px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-top: 10px;
+
+                .like-dislike {
+                    display: flex;
+                    height: 100%;
+
+                    .like:hover {
+                        background-color: #04bd3c;
+                    }
+
+                    .like {
+                        width: 48px;
+                        height: 46px;
+                        border: none;
+                        border-radius: 50%;
+                        background-color: #68b680;
+                        color: #68b680;
+                        padding: 7px 11px 13px;
+                        margin: 10px;
+                        cursor: pointer;
+
+                        img {
+                            width: 27px;
+                            height: 27px;
+                        }
+
+                        p {
+                            padding-top: 15px;
+                            font-family: "Montserrat-Bold";
+                        }
+                    }
+                    .likepress{
+                        background-color: #04bd3c;
+
+                    }
+                    .dislikepress{
+                        background-color: #ff001e!important;
+
+                    }
+                    .dislike:hover {
+                        background-color: #ff001e;
+                    }
+
+                    .dislike {
+                        width: 48px;
+                        height: 46px;
+                        border: none;
+                        border-radius: 50%;
+                        background-color: #ff344d;
+                        color: #ff344d;
+                        padding: 11px 11px 10px;
+                        margin: 10px;
+                        cursor: pointer;
+
+                        img {
+                            width: 27px;
+                            height: 27px;
+                        }
+
+                        p {
+                            padding-top: 10px;
+                            font-family: "Montserrat-Bold";
+                        }
+                    }
+                }
+
+                .prev-next {
+                    button {
+                        background-color: white;
+                        // height: 50px;
+                        padding: 12px 28px;
+                        margin: 0 20px;
+                        color: #cfb995;
+                        font-family: "Montserrat-Medium";
+                        border: 1px solid #cfb9958c;
+                    }
+
+                    .arrow-prev {
+                        width: 9px;
+                        margin: 0px -17px;
+                        position: absolute;
+                        z-index: 1;
+                        transform: scaleX(1);
+                    }
+
+                    .arrow-next {
+                        width: 9px;
+                        margin: 0px 8px;
+                        position: absolute;
+                        z-index: 1;
+                        transform: scaleX(-1);
+                    }
+                }
+            }
+
+            .p {
+                text-align: left;
+                font-size: 18px;
+                line-height: 28px;
+                padding-right: 62px;
+                columns: #575757;
+            }
+
+            .title-wrap {
+                display: flex;
+                justify-content: space-around;
+
+                .social {
+                    border-radius: 20px;
+                    width: 150px;
+                    background-color: #58e690;
+                    color: white;
+                    padding: 4px 2px;
+                }
+
+                .TRENDING {
+                    color: #f3a536;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    margin-left: auto;
+                    padding-right: 10px;
+                    font-weight: 700;
+                    font-family: "Montserrat-Medium";
+                }
+            }
+
+            .title {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin: 13px 0;
+
+                h1 {
+                    color: #cfb995;
+                    font-size: 40px;
+                }
+
+                h4 {
+                    color: #cfb995;
+                    font-size: 15px;
+                    padding-bottom: 8px;
+                }
+
+                .No {
+                    padding-right: 45px;
+                }
+            }
+
+        }
+
+        .top10 {
+            width: 27%;
+            height: 350px;
+            min-width: 275px;
+            background-color: #fff;
+            text-align: left;
+            padding-top: 10px;
+            padding-left: 39px;
+            margin-left: 30px;
+
+            h4 {
+                // text-align: center;
+
+                padding: 20px 0;
+                text-transform: uppercase;
+            }
+
+            p {
+                line-height: 28px;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+    }
+}

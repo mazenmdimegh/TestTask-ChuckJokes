@@ -1,10 +1,11 @@
 import arrow from '../../assets/assets_Homework_Front-End_01/path-copy-3.png';
 import orangeLight from '../../assets/assets_Homework_Front-End_02/orange-light@3x.png';
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"; 
+import { Link } from "react-router-dom";
 import "./JokeCard.scss";
 
 
-const JokeCard = ({Joke}) => {
+const JokeCard = ({ Joke }) => {
     // const joke=Joke;
     const aa = {
         "categories": [],
@@ -18,13 +19,13 @@ const JokeCard = ({Joke}) => {
     // const [Toggle, setToggle] = useState(false);
     return (
         <div className="card-wrapper">
-        <div className="card-wrap">
-            <div >
-            <h5><span><img className='orangeLight' src={orangeLight} /></span>lawyer Joke</h5>
-            <p className='joke-text'>{Joke["value"]}</p>
+            <div className="card-wrap">
+                <div >
+                    <h5><span><img className='orangeLight' src={orangeLight} /></span>lawyer Joke</h5>
+                    <p className='joke-text'>{Joke["value"]}</p>
+                </div>
+                <Link to={"/joke/"+Joke["id"]} className='seestats'>SEE STATS<span><img className='arrow' src={arrow} /></span></Link>
             </div>
-            <div className='seestats'>SEE STATS<span><img className='arrow' src={arrow} /></span></div>
-        </div>
         </div>
     );
 }

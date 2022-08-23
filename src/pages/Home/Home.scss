@@ -25,10 +25,12 @@
         margin-top: 80px;
         width: 500px;
         margin: 61px auto 0;
-        button{
+
+        button {
             background-color: #58e69100;
             border: none;
         }
+
         .search {
             margin-bottom: -5.5px;
             width: 28px;
@@ -114,7 +116,21 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        .stop-wrapper{
+            display: grid;
+            margin: auto;
+        }
+        .Stop {
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            color: #cfb995;
+        }
 
+        h3 {
+            margin: auto;
+            color: #cfb995;
+        }
 
     }
 
@@ -130,6 +146,7 @@
         color: white;
         margin-top: -2px;
     }
+
     .viewAll {
         color: #cfb995;
         border: 1px solid #cfb995;
@@ -143,6 +160,7 @@
         width: 200px;
         border-radius: 3px;
         cursor: pointer;
+
         .arrow {
             padding-left: 30px;
             position: absolute;
